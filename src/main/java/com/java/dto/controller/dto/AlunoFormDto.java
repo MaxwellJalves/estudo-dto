@@ -12,12 +12,11 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class AlunoFormDto {
 
-    private long codigo;
     private String nome;
     private String sexo;
     private BigDecimal saldo ;
 
-    public Aluno converEntityAluno(AlunoFormDto alunoFormDto) {
-        return new Aluno(codigo,nome,sexo,saldo);
+    public  Aluno converEntityAluno(AlunoFormDto alunoFormDto) {
+        return new Aluno(nome,sexo,saldo);
     }
 }
